@@ -1,0 +1,7 @@
+var excludeSpecial = function(s) {
+    // 去掉转义字符
+    s = s.replace(/[\'\"\\\/\b\f\n\r\t]/g, '');
+    // 去掉特殊字符
+    s = s.replace(/[\@\#\$\%\^\&\*\(\)\{\}\:\"\L\<\>\?\[\]]/);
+    return s;
+ };
